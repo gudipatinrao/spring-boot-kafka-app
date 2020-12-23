@@ -33,3 +33,9 @@ git clone https://github.com/gudipatinrao/spring-boot-kafka-app.git
 cd springboot-kafka-example
 mvn spring-boot:run -DCLOUDKARAFKA_USERNAME=<USERNAME> -DCLOUDKARAFKA_PASSWORD=<PASSWORD> -DCLOUDKARAFKA_BROKERS=<BROKERS>
 
+Test:
+Use any REST API tester and post few messages to API http://localhost:9000/kafka/publish in query parameter "message".
+
+Message post : http://localhost:9000/kafka/publish?message=Alphabet
+
+Observe the console logs:
