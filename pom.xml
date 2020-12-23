@@ -9,11 +9,11 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.howtodoinjava</groupId>
+	<groupId>com.cp4i</groupId>
 	<artifactId>spring-boot-kafka-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-kafka-app</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot Kafka</description>
 
 	<properties>
 		<java.version>1.8</java.version>

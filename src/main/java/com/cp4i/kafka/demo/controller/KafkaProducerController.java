@@ -1,4 +1,4 @@
-package com.howtodoinjava.kafka.demo.controller;
+package com.cp4i.kafka.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.howtodoinjava.kafka.demo.model.User;
-import com.howtodoinjava.kafka.demo.service.KafKaProducerService;
+import com.cp4i.kafka.demo.model.User;
+import com.cp4i.kafka.demo.service.KafKaProducerService;
 
 @RestController
 @RequestMapping(value = "/kafka")

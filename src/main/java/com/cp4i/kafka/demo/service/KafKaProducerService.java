@@ -1,13 +1,13 @@
-package com.howtodoinjava.kafka.demo.service;
+package com.cp4i.kafka.demo.service;
 
+import com.cp4i.kafka.demo.common.AppConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.howtodoinjava.kafka.demo.common.AppConstants;
-import com.howtodoinjava.kafka.demo.model.User;
+import com.cp4i.kafka.demo.model.User;
 
 @Service
 public class KafKaProducerService 

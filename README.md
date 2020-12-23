@@ -15,8 +15,8 @@ spring.kafka.consumer.properties.spring.json.trusted.packages=*
 
 spring.kafka.properties.security.protocol=SASL_SSL
 spring.kafka.properties.sasl.mechanism=SCRAM-SHA-512
-spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="${CLOUDKARAFKA_USERNAME}" password="${CLOUDKARAFKA_PASSWORD}";
-
+spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="CLOUDKARAFKA_USERNAME" password="CLOUDKARAFKA_PASSWORD";
+## update the CLOUDKARAFKA_USERNAME/CLOUDKARAFKA_PASSWORD values with the SCRAM usr/password
 spring.kafka.consumer.ssl.truststore-location= classpath:/xxx.p12
 spring.kafka.consumer.ssl.truststore-password= xxxxx
 
@@ -31,11 +31,12 @@ spring.kafka.producer.ssl.truststore-password= xxxxx
 Run:
 git clone https://github.com/gudipatinrao/spring-boot-kafka-app.git
 cd springboot-kafka-example
-mvn spring-boot:run -DCLOUDKARAFKA_USERNAME=<USERNAME> -DCLOUDKARAFKA_PASSWORD=<PASSWORD> -DCLOUDKARAFKA_BROKERS=<BROKERS>
+mvn clean install
+mvn spring-boot:run
 
 Test:
 Use any REST API tester and post few messages to API http://localhost:9000/kafka/publish in query parameter "message".
 
-Message post : http://localhost:9000/kafka/publish?message=Alphabet
+Message post : http://localhost:9000/kafka/publish?message=IBMCloud
 
 Observe the console logs:

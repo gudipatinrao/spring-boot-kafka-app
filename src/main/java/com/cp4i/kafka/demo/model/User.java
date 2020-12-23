@@ -1,4 +1,4 @@
-package com.howtodoinjava.kafka.demo.model;
+package com.cp4i.kafka.demo.model;
 
 public class User 
 {

@@ -1,4 +1,4 @@
-package com.howtodoinjava.kafka.demo.common;
+package com.cp4i.kafka.demo.common;
 
 public class AppConstants 
 {
